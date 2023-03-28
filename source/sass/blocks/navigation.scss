@@ -1,0 +1,145 @@
+.navigation {
+  width: 51%;
+
+  @include vp-1023 {
+    width: 74%;
+  }
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 10px 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include vp-1023 {
+    padding: 1px 0;
+  }
+
+  @include vp-767 {
+    margin-top: 35px;
+    margin-left: 13px;
+  }
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    margin-right: 32px;
+
+    @include vp-1023 {
+      margin-right: 23px;
+    }
+
+    @include vp-767 {
+      margin-right: 0;
+    }
+  }
+
+  @include vp-767 {
+    margin-bottom: 28px;
+  }
+}
+
+
+
+.navigation__link {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-tangaroa;
+  }
+}
+
+.navigation__logo {
+  display: none;
+
+  @include vp-767 {
+    display: inline-block;
+  }
+}
+
+.navigation__toggle {
+  position: absolute;
+  display: none;
+  top: 24px;
+  right: 15px;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 15px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  z-index: 7;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.navigation__toggle-icon {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease 0s;
+
+  @include vp-767 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &--open {
+      opacity: 1;
+      pointer-events: all;
+      transition: opacity 0.3s ease 0.2s;
+
+      .is-open & {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease 0s;
+      }
+    }
+
+    &--close {
+      .is-open & {
+        opacity: 1;
+        pointer-events: all;
+        transition: opacity 0.3s ease 0.2s;
+      }
+    }
+  }
+}
+
+.navigation__wrapper {
+  @include vp-767 {
+    display: none;
+
+    .is-open & {
+      display: block;
+      position: absolute;
+      width: 285px;
+      height: 100%;
+      padding-top: 20px;
+      padding-right: 30px;
+      padding-left: 15px;
+      right: 0;
+      top: 0;
+      z-index: 5;
+      background-color: $color-alice-blue;
+    }
+  }
+}
