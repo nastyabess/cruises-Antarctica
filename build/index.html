@@ -18,12 +18,10 @@
   <div class="wrapper">
     <header class="main-header container" data-header>
       <div class="main-header__container">
-        <a class="main-header__logo" href="#">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-            <source media="(max-width: 1023px)" srcset="img/svg/logo-tablet.svg">
-            <img src="img/svg/logo.svg" alt="Логотип Cruises to Antarctica" loading="lazy">
-          </picture>
+        <a class="main-header__logo logo" href="#">
+          <div class="logo__image">
+            <img src="img/svg/logo.svg" alt="Логотип Cruises to Antarctica" width="70" height="38">
+          </div>
         </a>
         <nav class="main-header__nav navigation">
           <div class="navigation__wrapper">
@@ -66,7 +64,7 @@
               srcset="img/background-tablet.webp 1x, img/background-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/background-desktop.webp 1x, img/background-desktop@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/background-tablet.png 1x, img/background-tablet@2x.png 2x">
-            <img src="img/background-desktop.png" srcset="img/background-desktop@2x.png 2x"
+            <img src="img/background-desktop.jpg" srcset="img/background-desktop@2x.jpg 2x"
               alt="Изображение Антарктики.">
           </picture>
         </div>
@@ -75,9 +73,121 @@
           <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
         </div>
       </section>
+      <section class="trips">
+        <div class="container">
+          <div class="trips__container">
+            <div class="trips__text">
+              <h2>Путешествие на&nbsp;край Земли</h2>
+              <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш
+                круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько
+                видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+            </div>
+            <div class="trips__image">
+              <picture>
+                <source type="image/webp" srcset="img/penguins.webp 1x, img/penguins@2x.webp 2x">
+                <img src="img/penguins.png" srcset="img/penguins@2x.jpg 2x" alt="Пингвины в Антарктике.">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/advantages-bgd-mobile.webp 1x, img/advantages-bgd-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/advantages-bgd-tablet.webp 1x, img/advantages-bgd-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/advantages-bgd-desktop.webp 1x, img/advantages-bgd-desktop@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/advantages-bgd-mobile.png 1x, img/advantages-bgd-mobile@2x.png 2x">
+            <source media="(max-width: 1023px)" srcset="img/advantages-bgd-tablet.png 1x, img/advantages-bgd-tablet@2x.png 2x">
+            <img src="img/advantages-bgd-desktop.png" srcset="img/advantages-bgd-desktop@2x.png 2x"
+              alt="Изображение Антарктики.">
+          </picture>
+        </div>
+        <div class="container">
+          <h2>Преимущества</h2>
+          <div class="advantages__container">
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--liner">
+                <svg width="27" height="32">
+                  <use xlink:href="img/sprite.svg#liner-icon"></use>
+                </svg>
+                <h3>Небольшой круизный лайнер</h3>
+                <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума
+                  и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+              </li>
+              <li class="advantages__item advantages__item--all-inclusive">
+                <svg width="38" height="32">
+                  <use xlink:href="img/sprite.svg#all-inclusive-icon"></use>
+                </svg>
+                <h3>Система все&nbsp;включено</h3>
+                <p>Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда
+                  и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+              </li>
+              <li class="advantages__item advantages__item--zodiac">
+                <svg width="44" height="32">
+                  <use xlink:href="img/sprite.svg#zodiac-icon"></use>
+                </svg>
+                <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+                <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac
+                  c&nbsp;опытными экскурсоводами.</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </section>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__logo logo" href="#">
+          <div class="logo__image">
+            <img src="img/svg/logo.svg" alt="Логотип Cruises to Antarctica" width="70" height="38">
+          </div>
+        </a>
+        <nav class="footer__nav navigation">
+          <ul class="footer__nav-list navigation__list">
+            <li class="footer__nav-item navigation__item">
+              <a class="footer__nav-link" href="#">Преимущества</a>
+            </li>
+            <li class="footer__nav-item navigation__item">
+              <a class="footer__nav-link" href="#">Направления</a>
+            </li>
+            <li class="footer__nav-item navigation__item">
+              <a class="footer__nav-link" href="#">Ближайшие круизы</a>
+            </li>
+            <li class="footer__nav-item navigation__item">
+              <a class="footer__nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <svg class="social__link-icon" width="12" height="20">
+                <use xlink:href="img/sprite.svg#ok-icon"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Одноклассниках.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <svg class="social__link-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#dzen-icon"></use>
+              </svg>
+              <span class="visually-hidden">Мы на Дзене.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <svg class="social__link-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#reddit-icon"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Reddit.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </div>
 

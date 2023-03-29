@@ -1,8 +1,8 @@
 .navigation {
-  width: 51%;
+  min-width: 51%;
 
-  @include vp-1023 {
-    width: 74%;
+  @include vp-1279 {
+    min-width: 74%;
   }
 }
 
@@ -41,8 +41,6 @@
   }
 }
 
-
-
 .navigation__link {
   display: block;
   font-size: 16px;
@@ -50,6 +48,7 @@
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
   color: $color-alice-blue;
+  cursor: pointer;
 
   @include vp-1023 {
     font-size: 14px;
@@ -61,6 +60,14 @@
     line-height: 22px;
     color: $color-tangaroa;
   }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+
+  @include active {
+    opacity: 0.6;
+  }
 }
 
 .navigation__logo {
@@ -68,6 +75,14 @@
 
   @include vp-767 {
     display: inline-block;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+
+  @include active {
+    opacity: 0.6;
   }
 }
 
@@ -77,7 +92,6 @@
   top: 24px;
   right: 15px;
   z-index: 2;
-  display: block;
   width: 24px;
   height: 15px;
   padding: 0;
@@ -92,9 +106,7 @@
 }
 
 .navigation__toggle-icon {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease 0s;
+  display: none;
 
   @include vp-767 {
     position: absolute;
@@ -103,12 +115,12 @@
     transform: translate(-50%, -50%);
 
     &--open {
-      opacity: 1;
+      display: block;
       pointer-events: all;
       transition: opacity 0.3s ease 0.2s;
 
       .is-open & {
-        opacity: 0;
+        display: none;
         pointer-events: none;
         transition: opacity 0.3s ease 0s;
       }
@@ -116,7 +128,7 @@
 
     &--close {
       .is-open & {
-        opacity: 1;
+        display: block;
         pointer-events: all;
         transition: opacity 0.3s ease 0.2s;
       }

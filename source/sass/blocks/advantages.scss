@@ -1,0 +1,162 @@
+.advantages {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 120px;
+
+  @include vp-1023 {
+    padding-top: 89px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 58px;
+    padding-bottom: 65px;
+  }
+}
+
+.advantages__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.advantages__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-color: $color-alice-blue;
+}
+
+.advantages h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: $color-tangaroa;
+  margin: 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+.advantages__container {
+  max-width: 1160px;
+  margin: 0 auto;
+
+  @include vp-1023 {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.advantages__item {
+  position: relative;
+  background-color: $color-alice-blue;
+  padding: 81px 34px 45px 30px;
+
+  @include vp-1023 {
+    padding: 70px 16px 20px 20px;
+  }
+
+  &--liner svg {
+    @include vp-1023 {
+      width: 21px;
+      height: 26px;
+    }
+  }
+
+  &--all-inclusive svg {
+    @include vp-1023 {
+      width: 27px;
+      height: 26px;
+    }
+  }
+
+  &--zodiac svg {
+    @include vp-1023 {
+      width: 36px;
+      height: 26px;
+    }
+  }
+}
+
+.advantages__item svg {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  @include vp-1023 {
+    top: 27px;
+    left: 20px;
+  }
+}
+
+.advantages__list h3 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+  color: $color-tangaroa;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @include vp-1023 {
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    padding-right: 53px;
+  }
+}
+
+.advantages__list p {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-tangaroa;
+  margin: 0;
+}
