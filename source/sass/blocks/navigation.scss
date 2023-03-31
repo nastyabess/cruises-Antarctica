@@ -142,16 +142,6 @@
 
     .is-open & {
       display: block;
-      position: absolute;
-      width: 285px;
-      height: 100%;
-      padding-top: 20px;
-      padding-right: 30px;
-      padding-left: 15px;
-      right: 0;
-      top: 0;
-      z-index: 5;
-      background-color: $color-alice-blue;
     }
   }
 }

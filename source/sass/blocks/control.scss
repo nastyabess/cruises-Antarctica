@@ -1,0 +1,63 @@
+.control__wrapper {
+  margin-bottom: 31px;
+
+  @include vp-767 {
+    margin-bottom: 27px;
+  }
+}
+
+.control label {
+  display: block;
+  position: relative;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  padding-left: 23px;
+  color: $color-alice-blue;
+  border-color: $color-transparent;
+  cursor: pointer;
+
+  @include vp-767 {
+    line-height: 12px;
+    padding-left: 28px;
+    padding-right: 50px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.control__mark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: $color-alice-blue;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+
+  @include vp-767 {
+    width: 20px;
+    height: 20px;
+    top: 1px;
+  }
+}
+
+.control input:checked+.control__mark::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 9px;
+  background-image: url("../img/svg/checkbox.svg");
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.control input:focus+.control__mark {
+  outline: 2px solid $color-alice-blue;
+}

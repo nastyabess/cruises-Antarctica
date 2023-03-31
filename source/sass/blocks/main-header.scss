@@ -17,13 +17,6 @@
   margin-right: 70px;
 }
 
-.is-open .main-header__logo {
-  @include vp-767 {
-    opacity: 0;
-    pointer-events: none;
-  }
-}
-
 .main-header__container {
   max-width: 1160px;
   margin: 0 auto;
@@ -35,8 +28,22 @@
   }
 
   @include vp-767 {
-    min-width: 290px;
     display: block;
     padding: 0;
+
+    .is-open & {
+      display: block;
+      position: absolute;
+      width: 285px;
+      min-height: 100vh;
+      padding-top: 20px;
+      padding-right: 30px;
+      padding-left: 15px;
+      right: 0;
+      top: 0;
+      z-index: 5;
+      background-color: $color-alice-blue;
+      overflow: auto;
+    }
   }
 }
