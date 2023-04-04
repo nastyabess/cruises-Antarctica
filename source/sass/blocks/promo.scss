@@ -1,7 +1,7 @@
 .promo {
   position: relative;
   margin-top: -73px;
-  filter: drop-shadow(0px 4px 4px $color-black-shadow);
+  filter: drop-shadow(0 4px 4px $color-black-shadow);
 
   @include vp-1023 {
     filter: none;
@@ -23,11 +23,6 @@
   width: 100%;
   height: 100%;
   background-color: $color-tangaroa;
-
-  @include vp-767 {
-    object-position: bottom -39px left -136px;
-    scale: 1.1;
-  }
 }
 
 .promo__wrapper {
@@ -35,20 +30,20 @@
   margin: 0 auto;
   padding-left: 198px;
   padding-right: 40px;
-  padding-top: 268px;
+  padding-top: 308px;
   padding-bottom: 276px;
 
   @include vp-1023 {
     padding-left: 45px;
     padding-right: 24px;
-    padding-top: 284px;
+    padding-top: 311px;
     padding-bottom: 274px;
   }
 
   @include vp-767 {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 201px;
+    padding-top: 230px;
     padding-bottom: 180px;
   }
 }
@@ -60,7 +55,7 @@
   font-size: 54px;
   line-height: 66px;
   color: $color-alice-blue;
-  text-shadow: 0px 4px 4px $color-black-shadow;
+  text-shadow: 0 4px 4px $color-black-shadow;
   margin: 0;
   margin-bottom: 13px;
 
@@ -83,7 +78,7 @@
   font-size: 20px;
   line-height: 24px;
   color: $color-alice-blue;
-  text-shadow: 0px 4px 4px $color-black-shadow;
+  text-shadow: 0 4px 4px $color-black-shadow;
   margin: 0;
 
   @include vp-1023 {

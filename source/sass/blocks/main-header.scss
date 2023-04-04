@@ -1,6 +1,4 @@
 .main-header {
-  position: relative;
-  z-index: 2;
   margin-top: 35px;
 
   @include vp-1023 {
@@ -8,8 +6,12 @@
   }
 
   @include vp-767 {
-    position: static;
     margin-top: 20px;
+
+    .is-open & {
+      position: relative;
+      margin-top: 0;
+    }
   }
 }
 
@@ -18,32 +20,38 @@
 }
 
 .main-header__container {
-  max-width: 1160px;
+  position: absolute;
+  width: 100%;
+  max-width: 1224px;
   margin: 0 auto;
+  padding: 0 32px;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
 
   @include vp-1023 {
-    padding: 0 21px;
+    padding: 0 45px;
   }
 
   @include vp-767 {
     display: block;
-    padding: 0;
+    padding: 0 15px;
 
     .is-open & {
-      display: block;
-      position: absolute;
-      width: 285px;
-      min-height: 100vh;
+      width: 92%;
       padding-top: 20px;
       padding-right: 30px;
       padding-left: 15px;
-      right: 0;
       top: 0;
+      left: 11%;
+      transform: none;
       z-index: 5;
       background-color: $color-alice-blue;
-      overflow: auto;
+      height: 100vh;
+      overflow-y: auto;
+      scrollbar-width: thin;
     }
   }
 }

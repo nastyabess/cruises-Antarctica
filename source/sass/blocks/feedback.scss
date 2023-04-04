@@ -5,12 +5,12 @@
 
   @include vp-1023 {
     padding-top: 87px;
-    padding-bottom: 103px;
+    padding-bottom: 99px;
   }
 
   @include vp-767 {
     padding-top: 60px;
-    padding-bottom: 103px;
+    padding-bottom: 65px;
   }
 }
 
@@ -113,9 +113,9 @@
   max-width: 403px;
   margin-left: 144px;
   background-color: $color-tangaroa;
-  box-shadow: 0px 4px 45px $color-tangaroa-shadow;
+  box-shadow: 0 4px 45px $color-tangaroa-shadow;
   padding-top: 44px;
-  padding-bottom: 49px;
+  padding-bottom: 51px;
   padding-left: 50px;
   padding-right: 49px;
 
@@ -140,12 +140,11 @@
   text-align: left;
   color: $color-alice-blue;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 
   @include vp-767 {
     line-height: 25px;
     text-align: center;
-    margin-bottom: 28px;
   }
 }
 
@@ -161,7 +160,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   @include vp-767 {
     margin-bottom: 20px;
@@ -178,7 +177,7 @@
 
 .feedback__form input {
   width: 100%;
-  padding: 9px 16px;
+  padding: 9px 14px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -214,7 +213,7 @@
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  padding: 10px 20px;
+  padding: 11px 20px;
   color: $color-tangaroa;
   background-color: $color-alice-blue;
   border: none;
