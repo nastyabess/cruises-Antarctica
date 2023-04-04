@@ -23,7 +23,7 @@
   <div class="wrapper">
     <header class="main-header container" data-header>
       <div class="main-header__container">
-        <a class="main-header__logo logo" href="#">
+        <a class="main-header__logo logo" href="#" aria-label="Логотип Cruises to Antarctica">
           <svg width="70" height="38">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
@@ -46,7 +46,7 @@
             </ul>
           </div>
         </nav>
-        <button class="navigation-toggle" type="button" data-burger>
+        <button class="navigation-toggle" type="button" data-burger aria-label="Кнопка открытия и закрытия меню">
           <svg class="navigation-toggle__icon navigation-toggle__icon--open" width="24" height="15">
             <use xlink:href="img/sprite.svg#burger-icon"></use>
           </svg>
@@ -88,8 +88,8 @@
             </div>
             <div class="trips__image">
               <picture>
-                <source type="image/webp" srcset="img/penguins.webp 1x, img/penguins@2x.webp 2x">
-                <img src="img/penguins.png" srcset="img/penguins@2x.jpg 2x" alt="Пингвины в Антарктике.">
+                <source type="image/webp" srcset="img/penguins.webp 1x, img/penguins@2x.webp 2x" loading="lazy">
+                <img src="img/penguins.jpg" srcset="img/penguins@2x.jpg 2x" alt="Пингвины в Антарктике." loading="lazy">
               </picture>
             </div>
           </div>
@@ -99,17 +99,17 @@
         <div class="advantages__image">
           <picture>
             <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/advantages-bgd-mobile.webp 1x, img/advantages-bgd-mobile@2x.webp 2x">
+              srcset="img/advantages-bgd-mobile.webp 1x, img/advantages-bgd-mobile@2x.webp 2x" loading="lazy">
             <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/advantages-bgd-tablet.webp 1x, img/advantages-bgd-tablet@2x.webp 2x">
+              srcset="img/advantages-bgd-tablet.webp 1x, img/advantages-bgd-tablet@2x.webp 2x" loading="lazy">
             <source type="image/webp"
-              srcset="img/advantages-bgd-desktop.webp 1x, img/advantages-bgd-desktop@2x.webp 2x">
+              srcset="img/advantages-bgd-desktop.webp 1x, img/advantages-bgd-desktop@2x.webp 2x" loading="lazy">
             <source media="(max-width: 767px)"
-              srcset="img/advantages-bgd-mobile.png 1x, img/advantages-bgd-mobile@2x.png 2x">
+              srcset="img/advantages-bgd-mobile.png 1x, img/advantages-bgd-mobile@2x.png 2x" loading="lazy">
             <source media="(max-width: 1023px)"
-              srcset="img/advantages-bgd-tablet.png 1x, img/advantages-bgd-tablet@2x.png 2x">
+              srcset="img/advantages-bgd-tablet.png 1x, img/advantages-bgd-tablet@2x.png 2x" loading="lazy">
             <img src="img/advantages-bgd-desktop.png" srcset="img/advantages-bgd-desktop@2x.png 2x"
-              alt="Изображение Антарктики.">
+              alt="Изображение Антарктики." loading="lazy">
           </picture>
         </div>
         <div class="container">
@@ -153,8 +153,8 @@
                 <div class="catalog__card">
                   <div class="catalog__card-image">
                     <picture>
-                      <source type="image/webp" srcset="img/catalog-1.webp 1x, img/catalog-1@2x.webp 2x">
-                      <img src="img/catalog-1.png" srcset="img/catalog-1@2x.png 2x" width="309" height="386" alt="">
+                      <source type="image/webp" srcset="img/catalog-1.webp 1x, img/catalog-1@2x.webp 2x" loading="lazy">
+                      <img src="img/catalog-1.png" srcset="img/catalog-1@2x.png 2x" width="309" height="386" alt="" loading="lazy">
                     </picture>
                   </div>
                   <h3>Круиз “Астория”</h3>
@@ -175,8 +175,8 @@
                 <div class="catalog__card">
                   <div class="catalog__card-image">
                     <picture>
-                    <source type="image/webp" srcset="img/catalog-7.webp 1x, img/catalog-7@2x.webp 2x">
-                    <img src="img/catalog-7.png" srcset="img/catalog-7@2x.png 2x" width="309" height="386" alt="">
+                    <source type="image/webp" srcset="img/catalog-7.webp 1x, img/catalog-7@2x.webp 2x" loading="lazy">
+                    <img src="img/catalog-7.png" srcset="img/catalog-7@2x.png 2x" width="309" height="386" alt="" loading="lazy">
                     </picture>
                   </div>
                   <h3>Круиз “Элайн”</h3>
@@ -197,8 +197,8 @@
                 <div class="catalog__card">
                   <div class="catalog__card-image">
                     <picture>
-                    <source type="image/webp" srcset="img/catalog-3.webp 1x, img/catalog-3@2x.webp 2x">
-                    <img src="img/catalog-3.png" srcset="img/catalog-3@2x.png 2x" width="309" height="386" alt="">
+                    <source type="image/webp" srcset="img/catalog-3.webp 1x, img/catalog-3@2x.webp 2x" loading="lazy">
+                    <img src="img/catalog-3.png" srcset="img/catalog-3@2x.png 2x" width="309" height="386" alt="" loading="lazy">
                     </picture>
                   </div>
                   <h3>Круиз “Атлантис”</h3>
@@ -219,8 +219,8 @@
                 <div class="catalog__card">
                   <div class="catalog__card-image">
                     <picture>
-                    <source type="image/webp" srcset="img/catalog-4.webp 1x, img/catalog-4@2x.webp 2x">
-                    <img src="img/catalog-4.png" srcset="img/catalog-4@2x.png 2x" width="309" height="386" alt="">
+                    <source type="image/webp" srcset="img/catalog-4.webp 1x, img/catalog-4@2x.webp 2x" loading="lazy">
+                    <img src="img/catalog-4.png" srcset="img/catalog-4@2x.png 2x" width="309" height="386" alt="" loading="lazy">
                     </picture>
                   </div>
                   <h3>Круиз “Одиссей”</h3>
@@ -241,8 +241,8 @@
                 <div class="catalog__card">
                   <div class="catalog__card-image">
                     <picture>
-                    <source type="image/webp" srcset="img/catalog-5.webp 1x, img/catalog-5@2x.webp 2x">
-                    <img src="img/catalog-5.png" srcset="img/catalog-5@2x.png 2x" width="309" height="386" alt="">
+                    <source type="image/webp" srcset="img/catalog-5.webp 1x, img/catalog-5@2x.webp 2x" loading="lazy">
+                    <img src="img/catalog-5.png" srcset="img/catalog-5@2x.png 2x" width="309" height="386" alt="" loading="lazy">
                     </picture>
                   </div>
                   <h3>Круиз “Олимпия”</h3>
@@ -263,8 +263,8 @@
                 <div class="catalog__card">
                   <div class="catalog__card-image">
                     <picture>
-                    <source type="image/webp" srcset="img/catalog-6.webp 1x, img/catalog-6@2x.webp 2x">
-                    <img src="img/catalog-6.png" srcset="img/catalog-6@2x.png 2x" width="309" height="386" alt="">
+                    <source type="image/webp" srcset="img/catalog-6.webp 1x, img/catalog-6@2x.webp 2x" loading="lazy">
+                    <img src="img/catalog-6.png" srcset="img/catalog-6@2x.png 2x" width="309" height="386" alt="" loading="lazy">
                     </picture>
                   </div>
                   <h3>Круиз “Аврора”</h3>
@@ -285,8 +285,8 @@
                 <div class="catalog__card">
                   <div class="catalog__card-image">
                     <picture>
-                    <source type="image/webp" srcset="img/catalog-7.webp 1x, img/catalog-7@2x.webp 2x">
-                    <img src="img/catalog-7.png" srcset="img/catalog-7@2x.png 2x" width="309" height="386" alt="">
+                    <source type="image/webp" srcset="img/catalog-7.webp 1x, img/catalog-7@2x.webp 2x" loading="lazy">
+                    <img src="img/catalog-7.png" srcset="img/catalog-7@2x.png 2x" width="309" height="386" alt="" loading="lazy">
                     </picture>
                   </div>
                   <h3>Круиз “Леонор”</h3>
@@ -307,8 +307,8 @@
                 <div class="catalog__card">
                   <div class="catalog__card-image">
                     <picture>
-                    <source type="image/webp" srcset="img/catalog-8.webp 1x, img/catalog-8@2x.webp 2x">
-                    <img src="img/catalog-8.png" srcset="img/catalog-8@2x.png 2x" width="309" height="386" alt="">
+                    <source type="image/webp" srcset="img/catalog-8.webp 1x, img/catalog-8@2x.webp 2x" loading="lazy">
+                    <img src="img/catalog-8.png" srcset="img/catalog-8@2x.png 2x" width="309" height="386" alt="" loading="lazy">
                     </picture>
                   </div>
                   <h3>Круиз “Минион - 1”</h3>
@@ -333,16 +333,16 @@
         <div class="feedback__image">
           <picture>
             <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/feedback-background-mobile.webp 1x, img/feedback-background-mobile@2x.webp 2x">
+              srcset="img/feedback-background-mobile.webp 1x, img/feedback-background-mobile@2x.webp 2x" loading="lazy">
             <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/feedback-background-tablet.webp 1x, img/feedback-background-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/feedback-background.webp 1x, img/feedback-background@2x.webp 2x">
+              srcset="img/feedback-background-tablet.webp 1x, img/feedback-background-tablet@2x.webp 2x" loading="lazy">
+            <source type="image/webp" srcset="img/feedback-background.webp 1x, img/feedback-background@2x.webp 2x" loading="lazy">
             <source media="(max-width: 767px)"
-              srcset="img/feedback-background-mobile.png 1x, img/feedback-background-mobile@2x.png 2x">
+              srcset="img/feedback-background-mobile.png 1x, img/feedback-background-mobile@2x.png 2x" loading="lazy">
             <source media="(max-width: 1023px)"
-              srcset="img/feedback-background-tablet.png 1x, img/feedback-background-tablet@2x.png 2x">
+              srcset="img/feedback-background-tablet.png 1x, img/feedback-background-tablet@2x.png 2x" loading="lazy">
             <img src="img/feedback-background.png" srcset="img/feedback-background@2x.png 2x"
-              alt="Изображение Антарктики.">
+              alt="Изображение Антарктики." loading="lazy">
           </picture>
         </div>
         <div class="container">
@@ -401,7 +401,7 @@
         <div class="container">
           <div class="contacts__container">
             <div class="contacts__map">
-              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5b68526d86c2dee110ec9f72b0f17b06e589a65501994ff33e80ad12e160b399&amp;source=constructor"></iframe>
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5b68526d86c2dee110ec9f72b0f17b06e589a65501994ff33e80ad12e160b399&amp;source=constructor" title="Карта с адресом г. Санкт Петербург, ул.Большая Конюшенная, 19/8" loading="lazy"></iframe>
             </div>
             <div class="contacts__text">
               <h3>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все
@@ -427,7 +427,7 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <a class="footer__logo logo" href="#">
+        <a class="footer__logo logo" href="#" aria-label="Логотип Cruises to Antarctica">
           <svg width="70" height="38">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
