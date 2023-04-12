@@ -19,7 +19,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 
   @include vp-1023 {
     padding-right: 21px;
@@ -35,12 +35,10 @@
 
 .trips__text {
   margin-right: 88px;
-  margin-top: 57px;
   max-width: 512px;
 
   @include vp-1023 {
     margin-right: 30px;
-    margin-top: 0;
     max-width: 324px;
   }
 
