@@ -849,7 +849,7 @@ button,
 
 .feedback {
   position: relative;
-  padding-top: 51px;
+  padding-top: 49px;
   padding-bottom: 50px;
 }
 
@@ -1473,7 +1473,7 @@ button,
   }
 
   .catalog__card dl {
-    padding-top: 44px;
+    padding-top: 40px;
   }
 
   .catalog__card-button {
@@ -1502,7 +1502,7 @@ button,
     max-width: 100%;
     padding-left: 150px;
     padding-right: 150px;
-    margin-bottom: 53px;
+    margin-bottom: 51px;
   }
 
   .feedback__text h2 {

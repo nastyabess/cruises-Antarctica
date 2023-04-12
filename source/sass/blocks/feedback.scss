@@ -1,6 +1,6 @@
 .feedback {
   position: relative;
-  padding-top: 51px;
+  padding-top: 49px;
   padding-bottom: 50px;
 
   @include vp-1023 {
@@ -52,7 +52,7 @@
     max-width: 100%;
     padding-left: 150px;
     padding-right: 150px;
-    margin-bottom: 53px;
+    margin-bottom: 51px;
   }
 
   @include vp-767 {
