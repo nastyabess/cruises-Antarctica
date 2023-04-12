@@ -7,11 +7,17 @@
 
   @include vp-767 {
     margin-top: 20px;
+  }
+}
 
-    .is-open & {
-      position: relative;
-      margin-top: 0;
-    }
+.is-open .main-header__overlay::before {
+  @include vp-767 {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
   }
 }
 

@@ -17,14 +17,14 @@
   align-items: center;
 
   @include vp-1023 {
-    padding: 0 45px;
+    padding: 0 21px;
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
     align-items: self-start;
-    padding: 0 15px;
+    padding: 0;
   }
 }
 
