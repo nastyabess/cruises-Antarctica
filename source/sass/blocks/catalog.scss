@@ -153,6 +153,7 @@
 .catalog__item:focus-within h3 {
   top: 28px;
   left: 25px;
+  bottom: auto;
 
   @include vp-1023 {
     top: 29px;
