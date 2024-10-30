@@ -761,9 +761,9 @@ button,
 
 .catalog__item:hover h3,
 .catalog__item:focus-within h3 {
+  bottom: auto;
   top: 28px;
   left: 25px;
-  bottom: auto;
 }
 
 .catalog__card-wrapper {
